@@ -1,5 +1,3 @@
-2023-08-12 18:38:51.086036+0800 smart-calc[38895:2734408] [connection] nw_proxy_resolver_create_parsed_array [C1.1.1 proxy pac] Evaluation error: NSURLErrorDomain: -1003
-2023-08-12 18:38:51.560594+0800 smart-calc[38895:2734408] [tcp] tcp_output [C1.1.1.1.1:3] flags=[R.] seq=1118818504, ack=1360829158, win=2060 state=CLOSED rcv_nxt=1360829158, snd_una=1118818504
 {
  "result":"success",
  "documentation":"https://www.exchangerate-api.com/docs",
