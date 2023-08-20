@@ -87,11 +87,11 @@ $$
 则:\qquad&c = AB = BD + AD = asin\alpha + bsin\beta \\
 两边平方得:\qquad& c^2 = a^2sin^2\alpha + 2absin\alpha sin\beta + b^2sin^2\beta\\
 &=a^2(1 - cos^2\alpha) + 2absin\alpha sin\beta + b^2(1-cos^2\beta)\\
-&=a^2 + b^2 - (a^2cos^2\alpha + b^2cos^2\beta) + 2absin\alpha sin\beta\qquad(5)\\
+&=a^2 + b^2 - (a^2cos^2\alpha + b^2cos^2\beta) + 2absin\alpha sin\beta&\qquad(5)\\
 而\triangle CBD和\triangle CDA中:\qquad& CD = acos\alpha = b cos\beta\\
-于是有:\qquad& a^2cos^2\alpha + b^2cos^2\beta = 2CD^2\qquad(6)\\
+于是有:\qquad& a^2cos^2\alpha + b^2cos^2\beta = 2CD^2&\qquad(6)\\
 又有前面的欧拉公式推理知:\qquad& sin\alpha sin\beta = cos\alpha cos\beta - cos(\alpha + \beta)\\
-两边乘以2ab且\gamma = \alpha + \beta:\qquad& 2absin\alpha sin\beta = 2abcos\alpha cos\beta - 2abcos(\alpha + \beta)=2CD^2-2abcos\gamma\qquad(7)\\
+两边乘以2ab且\gamma = \alpha + \beta:\qquad& 2absin\alpha sin\beta = 2abcos\alpha cos\beta - 2abcos(\alpha + \beta)=2CD^2-2abcos\gamma&\qquad(7)\\
 (6)(7) 代入(5)得:\qquad& c^2= a^2 + b^2 - 2CD^2 + 2CD^2 - 2abcos\gamma =a^2 + b^2 - 2abcos\gamma\\
 即:\qquad& c^2 = a^2 + b^2 - 2abcos\gamma
 \end{align*}
