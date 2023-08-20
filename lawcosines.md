@@ -82,7 +82,7 @@ $$
 ![](https://wecache.com/algorithm-media/trippleforlawcosines.jpg)
 $$
 \begin{align*}
-如图，作AD\perp BC 于D，\angle BAD=\alpha,\angle DAC = \beta\\
+如图，作CD\perp AB 于D，\angle BCD=\alpha,\angle DCA = \beta\\
 且由题意设:\qquad&\gamma = \alpha + \beta\\
 则:\qquad&c = AB = BD + AD = asin\alpha + bsin\beta \\
 两边平方得:\qquad& c^2 = a^2sin^2\alpha + 2absin\alpha sin\beta + b^2sin^2\beta\\
