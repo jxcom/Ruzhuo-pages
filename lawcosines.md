@@ -76,7 +76,7 @@ $$
 
 假设三角形为：
 
-![](https://wecache.com/algorithm-media/trippleforlawcosines.png)
+![](https://wecache.com/algorithm-media/trippleforlawcosines.jpg)
 $$
 \begin{align*}
 如图，作AD\perp BC 于D，\angle BAD=\alpha,\angle DAC = \beta\\
