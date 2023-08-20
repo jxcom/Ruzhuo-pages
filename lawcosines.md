@@ -70,7 +70,14 @@ $$
 即:\\
 \qquad&e^{ix} = (1 -\frac{1}{2!}x^2 + \frac{1}{4!}x^4 - \frac{1}{6!}x^6 + \ldots) + i( x - \frac{1}{3!}x^3 + \frac{1}{5!}x^5 - \frac{1}{7!}x^7 + \ldots)\\
 无穷级数展开式替换回sinx和cosx得欧拉公式:\qquad& e^{ix} = cosx + isinx\\
-用x+y替换其中的x:\qquad& e^{i(x+y)} = cos(x+y)+isin(x+y)\\
+\end{align*}
+$$
+
+### 欧拉公式得到三角函数和差积关系
+
+$$
+\begin{align*}
+用x+y替换欧拉公式中的x:\qquad& e^{i(x+y)} = cos(x+y)+isin(x+y)\\
 而:\qquad& e^{i(x+y)}=e^{ix}*e^{iy}=(cosx+isinx)*(cosy+isiny)=(cosxcosy - sinxsiny)+i(sinxcosy+sinycosx)\\
 以上两式相等，于是有:\qquad&cos(x+y)=cosxcosy - sinxsiny \,和\,sin(x+y)= sinxcosy+sinycosx
 \end{align*}
