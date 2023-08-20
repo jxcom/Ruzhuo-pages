@@ -1,12 +1,15 @@
 # 余弦定理证明
 
+[toc]
+
+## 余弦定理
+
 对于任意三角形，假设三边为a，b 和 c，c 边对应的角为 $\gamma$ ，则有如下关系：
 $$
 \begin{align*}
 c^2 = a^2 + b^2 - 2abcos\gamma
 \end{align*}
 $$
-
 
 ## 前置推导
 
@@ -31,7 +34,7 @@ $$
 设(3)中x=0，得:\qquad& -sinx|_{x=0} = 2a_2 = 0, a_2 = 0\\
 继续对(3)求导得:\qquad& (-sinx)'=-cosx = 3 * 2 * 1 * a_3 + 4 * 3 * 2 * a_4 * x + 5 * 4 * 3 * x^2 + \ldots&\qquad(4)\\
 设(4)中x=0，得:\qquad& -cosx|_{x=0} = 3!a_3=-1, a_3 = -\frac{1}{3!}\\
-\qquad& v如此循环，继续对(4)求导求得a_4=0,a_5=-\frac{1}{5!}\ldots\\
+\qquad& 如此循环，继续对(4)求导求得a_4=0,a_5=-\frac{1}{5!}\ldots\\
 于是:\qquad& sinx = x - \frac{1}{3!}x^3 + \frac{1}{5!}x^5 - \frac{1}{7!}x^7 + \ldots\\
 \end{align*}
 $$
