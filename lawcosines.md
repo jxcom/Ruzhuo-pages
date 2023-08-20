@@ -28,7 +28,7 @@ $$
 \begin{align*}
 设展开式为:\qquad& \sin x = a_0 + a_1x+a_2x^2+a_3x^3+\ldots&\qquad(1)\\
 设x=0，可求得a_0:\qquad& \sin x|_{x=0} = a_0=0\\
-对(1)求导，得:\qquad& (\sin x)' = cosx = a_1 + 2a_2x + 3a_3x^2 + \ldots&\qquad(2)\\
+对(1)求导，得:\qquad& (\sin x)' = \cos x = a_1 + 2a_2x + 3a_3x^2 + \ldots&\qquad(2)\\
 同样设x=0，则:\qquad& a_1 = \cos x|_{x=0} = 1\\
 继续对(2)求导得:\qquad& (\cos x)'=-\sin x=2a_2 + 3 *2 * a_3x + \ldots&\qquad(3)\\
 设(3)中x=0，得:\qquad& -\sin x|_{x=0} = 2a_2 = 0, a_2 = 0\\
@@ -101,7 +101,7 @@ $$
 而\triangle CBD和\triangle CDA中:\qquad& CD = a\cos\alpha = b \cos\beta\\
 于是有:\qquad& a^2\cos^2\alpha + b^2\cos^2\beta = 2CD^2&\qquad(6)\\
 又有前面的欧拉公式推理知:\qquad& \sin\alpha \sin\beta = \cos\alpha \cos\beta - \cos(\alpha + \beta)\\
-两边乘以2ab且\gamma = \alpha + \beta:\qquad& 2ab\sin\alpha sin\beta = 2ab\cos\alpha \cos\beta - 2ab\cos(\alpha + \beta)=2CD^2-2ab\cos\gamma&\qquad(7)\\
+两边乘以2ab且\gamma = \alpha + \beta:\qquad& 2ab\sin\alpha \sin\beta = 2ab\cos\alpha \cos\beta - 2ab\cos(\alpha + \beta)=2CD^2-2ab\cos\gamma&\qquad(7)\\
 (6)(7) 代入(5)得:\qquad& c^2= a^2 + b^2 - 2CD^2 + 2CD^2 - 2ab\cos\gamma =a^2 + b^2 - 2ab\cos\gamma\\
 即:\qquad& c^2 = a^2 + b^2 - 2ab\cos\gamma
 \end{align*}
