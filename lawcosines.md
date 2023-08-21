@@ -1,3 +1,5 @@
+[Home](https://wecache.com)
+
 # 余弦定理证明
 
 [toc]
