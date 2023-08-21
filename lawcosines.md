@@ -15,7 +15,7 @@ $$
 
 ### 使用泰勒方法展开三个初等函数
 
-#### sinx 的无穷级数展开
+#### $\sin x$ 的无穷级数展开
 
 $$
 \begin{align*}
@@ -39,9 +39,9 @@ $$
 \end{align*}
 $$
 
-#### cosx 的无穷级数展开
+#### $\cos x$ 的无穷级数展开
 
-同sinx无穷级数泰勒方法展开，cosx的无求级数展开为：
+同$\sin x$无穷级数泰勒方法展开，$\cos x$的无求级数展开为：
 $$
 \begin{align*}
 \cos x = 1 -\frac{1}{2!}x^2 + \frac{1}{4!}x^4 - \frac{1}{6!}x^6 + \ldots\\
@@ -51,7 +51,7 @@ $$
 
 #### $e^x$ 的无穷级数展开
 
-同sinx无穷级数泰勒方法展开，$e^x$ 展开为：
+同$\sin x$无穷级数泰勒方法展开，$e^x$ 展开为：
 
 $$
 \begin{align*}
@@ -69,7 +69,7 @@ $$
 \qquad&e^{ix} = 1 + ix - \frac{1}{2!}x^2 - \frac{1}{3!}ix^3 + \frac{1}{4!}x^4 - \frac{1}{5!}ix^5 - \frac{1}{6!}x^6 -\frac{1}{7!}ix^7 + \ldots\\
 即:\\
 \qquad&e^{ix} = (1 -\frac{1}{2!}x^2 + \frac{1}{4!}x^4 - \frac{1}{6!}x^6 + \ldots) + i( x - \frac{1}{3!}x^3 + \frac{1}{5!}x^5 - \frac{1}{7!}x^7 + \ldots)\\
-无穷级数展开式替换回sinx和cosx得欧拉公式:\qquad& e^{ix} = \cos x + i\sin x\\
+无穷级数展开式替换回\sin x和\cos x得欧拉公式:\qquad& e^{ix} = \cos x + i\sin x\\
 \end{align*}
 $$
 
