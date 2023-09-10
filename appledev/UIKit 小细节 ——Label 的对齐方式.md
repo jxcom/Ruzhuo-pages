@@ -10,15 +10,15 @@ https://www.kodeco.com/books/auto-layout-by-tutorials
 
 今天遇到什么问题呢，主要是当 Label 内容换行的时候，它对齐的方式居然是向左下角对齐，而不是左上角，我不清楚什么时候修改了，还是默认如此，一行的情况下是正常：
 
-
+![正常情况](https://wecache.com/appledev/principals-1.png)
 
 多行的情况下 Principals 出现漂移：
 
-
+![异常情况](https://wecache.com/appledev/principals-2.png)
 
 询问 ChatGPT，得到的答案是可能是 constraint 的问题，发现 Principals 这个 Label 的一个 constraint 居然是 bottom，怀疑是这个有关改成 top ，好了：
 
-
+![解决](https://wecache.com/appledev/principals-3.png)
 
 后来也出现了几个对齐的问题，大都与 constraint 设置有关，看来这个东西虽然可以帮助我们更方便的对齐，但也要小心暗藏一些小动作。
 
