@@ -24,7 +24,7 @@
 
 2）control 拖动 column 下的 cell 控件到 view controller 类上，创建函数 `clickNameToEdit` ，其入参是 cell 中的控件 NSTextField，即 sender，receiver 当然是 view controller，当完成编辑某一行的 name 字段时，就会发送这个 `clickNameToEdit` 消息，进而从 sender 处获得编辑后的新值，从而可以写入 self.students 对应的字段值中：
 
-
+![](https://wecache.com/appledev/swift-editable1.png)
 
 ```swift
     @IBAction func clickNameToEdit(_ sender: NSTextField) {
@@ -50,7 +50,7 @@
 
 如之前的 bind to 一样，我们把 table view 的 cell 绑定到 student 的一个新建字段 isEditable：
 
-
+![](https://wecache.com/appledev/swift-editable2.png)
 
 然后在每次读取这个字段时去判断是否真的 editable 即可：
 
@@ -85,11 +85,11 @@
 
 对于一个控件，其 delegate 是控件名 + Delegate，例如上面说的 cell，其类名是 `NSTextField`那么对应的 delegate 就是 `NSTextFieldDelegate` ，翻阅文档即可知道，系统都提供了什么回调方法给我们：
 
-
+![](https://wecache.com/appledev/swift-editable3.png)
 
 看上去并没有什么可以让我们在编辑的时候检查权限的方法。但我们发现 `NSTextFieldDelegate` 继承了 `NSControlTextEditingDelegate`，因此，我们继续翻阅：
 
-
+![](https://wecache.com/appledev/swift-editable4.png)
 
 至此，找到了一个合适的回调，在编辑时检查权限，从而可以拦截住没有权限的操作。
 
@@ -125,7 +125,7 @@ extension ViewController: NSTableViewDelegate,
 
 然后在 connection inspector 中拖动 delegate 到 view controller：
 
-
+![](https://wecache.com/appledev/swift-editable5.png)
 
 也可以用代码实现，即 control 拖动 cell 控件到 view controller 类上获得 cell 控件对象（即增加 @IBOutlet），例如名字叫 myCell，则绑定代码为
 
@@ -158,10 +158,15 @@ self.myCell.delegagte = self
 
 这个回调函数在编辑一个 cell 时，cell 作为 sender 会回调 view controller，注意第 5 行，其获得父类控件对象 table view 的方式是不停的取 `supperview` ，那么怎么知道到底哪一个才是 table view 对象呢？只要看 storyboard 即可：
 
-
+![](https://wecache.com/appledev/swift-editable6.png)
 
 可以看到，cell 的第三个父类对象是 table view 类，因此取第三个父类即可。
 
 后面的 id 是否可以被 2 整除则是业务逻辑，无需关心。
 
 这样我们就可以在编辑的时候才去检查权限了。
+
+## 更新脑图
+
+![](https://wecache.com/appledev/swift-binding3.svg)
+
