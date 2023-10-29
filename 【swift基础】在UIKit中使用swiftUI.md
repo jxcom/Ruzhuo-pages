@@ -86,7 +86,7 @@ class SettingsHostingController: NSHostingController<SettingsView> {
 
 最后在 property 面板中将控件和类关联起来：
 
-![](https://wecache.com/appledev/swiftuiincocoa-1.png)
+![](https://wecache.com/appledev/swiftuiincocoa-2.png)
 
 这样我们就可以在 UIKit 的代码中通过  `SettingsHostingController` 来控制一个用 swiftUI 编写的 `SettingsView` 了。
 
@@ -94,11 +94,13 @@ class SettingsHostingController: NSHostingController<SettingsView> {
 
 显示 hosting controller 其实就是现实其关联的 swiftUI 对象。如果我们打开面板，会发现 hosting controller 有一个 action 消息叫 show 或者 modal，因此只要有人给他发 show 或者 modal 消息就可以显示 hosting controller。
 
-![](https://wecache.com/appledev/swiftuiincocoa-2.png)
+![](https://wecache.com/appledev/swiftuiincocoa-3.png)
 
 这里我们把它绑定到一个 menu 上，只需要 control 拉动即可发送 show 或者 modal 消息：
 
-![](https://wecache.com/appledev/swiftuiincocoa-3.png)
+![](https://wecache.com/appledev/swiftuiincocoa-5.png)
+
+![](https://wecache.com/appledev/swiftuiincocoa-4.png)
 
 show 和 modal 的区别就是前者不阻塞父 view 但后者会。
 
@@ -209,7 +211,7 @@ UserDefaults 也可以做到 UIKit 和 swiftUI 共享数据。但要注意，Use
 
 例如之前的例子中，我们使用 star 这个图标来标星：
 
-![](https://wecache.com/appledev/swiftuiincocoa-4.png)
+![](https://wecache.com/appledev/swiftuiincocoa-6.png)
 
 首先创建一个 swiftUI view：
 
